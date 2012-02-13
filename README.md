@@ -5,7 +5,7 @@ Configuration
 -------------
 
 <pre>
-&gt;?php
+&lt;?php
     // application components
     'components' => array(
         // ...
