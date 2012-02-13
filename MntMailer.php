@@ -8,7 +8,7 @@
  * @package   Mintao_Yii_Extensions
  * @author    Florian Fackler <florian.fackler@mintao.com>
  * @copyright 2011 mintao GmbH & Co. KG
- * @license   Proprietary. All rights reserved
+ * @license   BSD. http://www.yiiframework.com/license/
  * @link      http://mintao.com
  */
 
@@ -19,12 +19,12 @@
  * around your mail template.
  * Html and plain text layouts/templates are in separate folders.
  *
- * @category  Mail
- * @package   Mintao_Yii_Extensions
- * @author    Florian Fackler <florian.fackler@mintao.com>
- * @copyright 2011 mintao GmbH & Co. KG
- * @license   Proprietary. All rights reserved
- * @link      http://mintao.com
+ * @category Mail
+ * @package  Mintao_Yii_Extensions
+ * @author   Florian Fackler <florian.fackler@mintao.com>
+ * @license  BSD. http://www.yiiframework.com/license/
+ * @license  Proprietary. All rights reserved
+ * @link     http://mintao.com
  */
 class MntMailer extends CComponent
 {

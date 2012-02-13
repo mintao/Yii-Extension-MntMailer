@@ -1,3 +1,9 @@
+MntMailer is a swiftmailer wrapper for Yii Framework
+====================================================
+
+Configuration
+-------------
+
 <pre>
 <?php
     // application components
