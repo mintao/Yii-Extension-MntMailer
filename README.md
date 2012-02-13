@@ -51,14 +51,21 @@ Usage in code
 $mailSent = Yii::app()->mailer->send(
     array(
         // Use plain text AND html as email format
+        // Possible: 'plain' or 'mixed'
         'mode' => 'mixed',
+
         // Default layout is layout.php
         //'layout' => 'layout',
+
+        // Email's subject
         'subject' => 'Welcome to ' . Yii::app()->getName(),
+
         // Template of email
         'template' => 'welcome',
-        // The recipient of your email
+
+        // The recipient address of your email
         'to' => 'user@example.com',
+
         // Placeholders in your email template
         'placeholder' => array(
             'title'     => 'Mr',
@@ -68,6 +75,7 @@ $mailSent = Yii::app()->mailer->send(
             'color'     => 'blue',
             // ...
         ),
+
         // You can attach files. For this, simply add the file path to
         // the array "attachments"
         'attachments' => array(
