@@ -4,8 +4,8 @@ MntMailer is a swiftmailer wrapper for Yii Framework
 Configuration
 -------------
 
-```php
 &lt;?php
+```php
     // application components
     'components' => array(
         // ...
@@ -84,3 +84,4 @@ $mailSent = Yii::app()->mailer->send(
     )
 //..
 ```
+
