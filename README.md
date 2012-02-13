@@ -85,3 +85,32 @@ $mailSent = Yii::app()->mailer->send(
 //..
 ```
 
+After sending, $mailSent contains the MntMailer object. 
+To check if everything went well, simply use <pre>hasErrors()</pre>
+
+Example
+-------
+
+```php
+<?php 
+
+if (true === $mailSent->hasErrors()) {
+    Yii::app()->log(
+        'Errors sending mail to ' . $mailSent->to . ': '
+        . CVarDumper::dumpAsString($mailSent->getErrors())
+    );
+    Yii::app()->getUser()->setFlash(
+        'error',
+        'Sorry, something went wrong, sending your mail.'
+    );
+} else {
+    Yii::app()->getUser()->setFlash(
+        'success',
+        'Everything went fine. Please check your mailbox.'
+    );
+}
+
+$this->redirect(array('module/controller/action'));
+```
+
+
